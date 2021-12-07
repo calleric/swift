@@ -3,21 +3,8 @@
 Snippets of Swift code
 
 
-### link
-
----
-
-![heart][https://github.com/calleric/swift/blob/898791b36d29da933a96b6303047f805cee8606a/images/heart.png]
-
----
-
-### raw
-<img src=“https://raw.githubusercontent.com/calleric/swift/blob/898791b36d29da933a96b6303047f805cee8606a/images/heart.png">
-
----
-
-
-![heart][https://raw.githubusercontent.com/calleric/swift/blob/898791b36d29da933a96b6303047f805cee8606a/images/heart.png]
+### Heart
+<img width="400" alt="heart" src="https://user-images.githubusercontent.com/10599608/144985935-dd699c50-d7fe-45e8-9af7-7a1ea18c528b.png">
 
 
 
