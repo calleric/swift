@@ -8,3 +8,4 @@ Snippets of Swift code
 
 
 
+<img width="400" alt="star" src="https://user-images.githubusercontent.com/10599608/145702247-e10906b3-8776-42b0-944a-916e781ab4c8.png">
