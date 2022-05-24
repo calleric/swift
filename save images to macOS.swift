@@ -11,6 +11,9 @@
 /// Setup steps:
 /// 1. Enable the User Selected File Read/Write entitlement for the App
 /// 2. Add a selection of images to the App Assets
+/// 
+/// see more 
+/// https://swdevnotes.com/swift/2022/save-an-image-to-macos-file-system-with-swiftui/
 
 
 import SwiftUI
