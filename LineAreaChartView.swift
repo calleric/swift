@@ -34,7 +34,7 @@ struct StepCount: Identifiable {
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .none
         dateFormatter.locale = Locale(identifier: "en_US")
-        return  dateFormatter.string(from: weekday)
+        return dateFormatter.string(from: weekday)
     }
     
     var shortDay: String {
@@ -115,7 +115,7 @@ struct LineAreaChartView: View {
                                 .frame(width: 8, height: 8)
                         }
                         .symbolSize(30)
-                        .accessibilityLabel($0.weekdayString)
+                        .accessibilityLabel("\($0.weekdayString)")
                         .accessibilityValue("\($0.steps) Steps")
                     }
                     
@@ -134,20 +134,16 @@ struct LineAreaChartView: View {
                                 .frame(width: 10)
                         }
                         .symbolSize(30)
-                        .accessibilityLabel($0.weekdayString)
+                        .accessibilityLabel("\($0.weekdayString)")
                         .accessibilityValue("\($0.steps) Steps")
-                        
+
                         AreaMark(
                             x: .value("Week Day", $0.shortDay),
                             y: .value("Step Count", $0.steps)
-                            //                            stacking: .unstacked
                         )
                         .interpolationMethod(.catmullRom)
                         .foregroundStyle(curGradient)
                         .foregroundStyle(by: .value("Week", "Current Week"))
-                        .accessibilityLabel($0.weekdayString)
-                        .accessibilityValue("\($0.steps) Steps")
-                        
                     }
                 }
                 // Set the Y axis scale
