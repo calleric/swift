@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "29518DCE-373A-4FF2-BEE2-8B2D60BFD9B8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67C9BDD4-7077-4344-8FE4-6570F9D4E2A8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MathewEffectApp/GameModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "playRound()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67C9BDD4-7077-4344-8FE4-6570F9D4E2A8 - f5d59ad2a42a87b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MathewEffectApp.GameModel.playRound() -&gt; ()"
+                  moduleName = "MathewEffectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericcallanan/GitHub/Projects/swift/2022/MathewEffectApp/MathewEffectApp/GameModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "67C9BDD4-7077-4344-8FE4-6570F9D4E2A8 - c6240931668d9ca9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (MathewEffectApp.Player) -&gt; Swift.Bool in MathewEffectApp.GameModel.playRound() -&gt; ()"
+                  moduleName = "MathewEffectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericcallanan/GitHub/Projects/swift/2022/MathewEffectApp/MathewEffectApp/GameModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "67C9BDD4-7077-4344-8FE4-6570F9D4E2A8 - 566095ccb4d86e16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (MathewEffectApp.Player) -&gt; Swift.Int in MathewEffectApp.GameModel.playRound() -&gt; ()"
+                  moduleName = "MathewEffectApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ericcallanan/GitHub/Projects/swift/2022/MathewEffectApp/MathewEffectApp/GameModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9C0CBA9-09EB-404C-A80E-B59067D6C521"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MathewEffectApp/GameModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "playRound()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
