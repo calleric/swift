@@ -11,6 +11,11 @@ Snippets of Swift code
 <img width="400" alt="star" src="https://user-images.githubusercontent.com/10599608/145702247-e10906b3-8776-42b0-944a-916e781ab4c8.png">
 
 
-
 ### Step count in Line and Area chart
 <img width="260" alt="steps-chart" src="https://user-images.githubusercontent.com/10599608/184635566-8b4e7526-3493-4b3a-9e85-45f4ad1d498c.png">
+
+
+### Bar Chart top section compared to RectangleMark and LineChart
+<img width="300" alt="bar-top-section-chart" src="https://github.com/calleric/swift/blob/78c89d74bc30cf5c367545703d1f4bc666a922c2/images/BarChart-top-section.png">
+
+
