@@ -18,4 +18,8 @@ Snippets of Swift code
 ### Bar Chart top section compared to RectangleMark and LineChart
 <img width="300" alt="bar-top-section-chart" src="https://github.com/calleric/swift/blob/78c89d74bc30cf5c367545703d1f4bc666a922c2/images/BarChart-top-section.png">
 
+### Hue color wheel with matching colors
+<img width="300" alt="Hue-color-wheel" src="https://github.com/calleric/swift/blob/14b9a9b9371c231c6ed06ab3715b3d6e45543471/images/matching-colors-with-hsb.png">
+
+
 
