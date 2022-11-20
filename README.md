@@ -21,5 +21,10 @@ Snippets of Swift code
 ### Hue color wheel with matching colors
 <img width="600" alt="Hue-color-wheel" src="https://github.com/calleric/swift/blob/14b9a9b9371c231c6ed06ab3715b3d6e45543471/images/matching-colors-with-hsb.png">
 
+### NavigationSplitView for three-column navigation with multi-select
+<img width="600" 
+alt="NavigationSplitView for three-column navigation with multi-select"
+src="https://github.com/calleric/swift/blob/9915f91b5e5b8dc5abd6f86b81168f1ea75c5557/images/three-column-multi-select.png">
+
 
 
