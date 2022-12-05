@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A944180293E220500E3FFC5 /* ScrollingChartsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94417F293E220500E3FFC5 /* ScrollingChartsAppApp.swift */; };
+		9A944182293E220500E3FFC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944181293E220500E3FFC5 /* ContentView.swift */; };
+		9A944184293E220600E3FFC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A944183293E220600E3FFC5 /* Assets.xcassets */; };
+		9A944187293E220600E3FFC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A944186293E220600E3FFC5 /* Preview Assets.xcassets */; };
+		9A94418E293E221700E3FFC5 /* WeightChartView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94418D293E221700E3FFC5 /* WeightChartView1.swift */; };
+		9A944190293E221B00E3FFC5 /* WeightChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94418F293E221B00E3FFC5 /* WeightChartView2.swift */; };
+		9A944192293E221F00E3FFC5 /* WeightChartView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944191293E221E00E3FFC5 /* WeightChartView3.swift */; };
+		9A944194293E222200E3FFC5 /* WeightChartView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944193293E222200E3FFC5 /* WeightChartView4.swift */; };
+		9A944196293E222600E3FFC5 /* WeightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944195293E222600E3FFC5 /* WeightData.swift */; };
+		9A944198293E222900E3FFC5 /* WeightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944197293E222900E3FFC5 /* WeightViewModel.swift */; };
+		9A94419A293E222D00E3FFC5 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A944199293E222D00E3FFC5 /* Date+Extensions.swift */; };
+		9A94419C293E223100E3FFC5 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A94419B293E223100E3FFC5 /* Styles.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A94417C293E220500E3FFC5 /* ScrollingChartsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollingChartsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A94417F293E220500E3FFC5 /* ScrollingChartsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingChartsAppApp.swift; sourceTree = "<group>"; };
+		9A944181293E220500E3FFC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A944183293E220600E3FFC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A944186293E220600E3FFC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A94418D293E221700E3FFC5 /* WeightChartView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightChartView1.swift; sourceTree = "<group>"; };
+		9A94418F293E221B00E3FFC5 /* WeightChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightChartView2.swift; sourceTree = "<group>"; };
+		9A944191293E221E00E3FFC5 /* WeightChartView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightChartView3.swift; sourceTree = "<group>"; };
+		9A944193293E222200E3FFC5 /* WeightChartView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightChartView4.swift; sourceTree = "<group>"; };
+		9A944195293E222600E3FFC5 /* WeightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightData.swift; sourceTree = "<group>"; };
+		9A944197293E222900E3FFC5 /* WeightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightViewModel.swift; sourceTree = "<group>"; };
+		9A944199293E222D00E3FFC5 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		9A94419B293E223100E3FFC5 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A944179293E220500E3FFC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A944173293E220500E3FFC5 = {
+			isa = PBXGroup;
+			children = (
+				9A94417E293E220500E3FFC5 /* ScrollingChartsApp */,
+				9A94417D293E220500E3FFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A94417D293E220500E3FFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A94417C293E220500E3FFC5 /* ScrollingChartsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A94417E293E220500E3FFC5 /* ScrollingChartsApp */ = {
+			isa = PBXGroup;
+			children = (
+				9A94417F293E220500E3FFC5 /* ScrollingChartsAppApp.swift */,
+				9A944181293E220500E3FFC5 /* ContentView.swift */,
+				9A94418D293E221700E3FFC5 /* WeightChartView1.swift */,
+				9A94418F293E221B00E3FFC5 /* WeightChartView2.swift */,
+				9A944191293E221E00E3FFC5 /* WeightChartView3.swift */,
+				9A944193293E222200E3FFC5 /* WeightChartView4.swift */,
+				9A944195293E222600E3FFC5 /* WeightData.swift */,
+				9A944197293E222900E3FFC5 /* WeightViewModel.swift */,
+				9A944199293E222D00E3FFC5 /* Date+Extensions.swift */,
+				9A94419B293E223100E3FFC5 /* Styles.swift */,
+				9A944183293E220600E3FFC5 /* Assets.xcassets */,
+				9A944185293E220600E3FFC5 /* Preview Content */,
+			);
+			path = ScrollingChartsApp;
+			sourceTree = "<group>";
+		};
+		9A944185293E220600E3FFC5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A944186293E220600E3FFC5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A94417B293E220500E3FFC5 /* ScrollingChartsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A94418A293E220600E3FFC5 /* Build configuration list for PBXNativeTarget "ScrollingChartsApp" */;
+			buildPhases = (
+				9A944178293E220500E3FFC5 /* Sources */,
+				9A944179293E220500E3FFC5 /* Frameworks */,
+				9A94417A293E220500E3FFC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollingChartsApp;
+			productName = ScrollingChartsApp;
+			productReference = 9A94417C293E220500E3FFC5 /* ScrollingChartsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A944174293E220500E3FFC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					9A94417B293E220500E3FFC5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 9A944177293E220500E3FFC5 /* Build configuration list for PBXProject "ScrollingChartsApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A944173293E220500E3FFC5;
+			productRefGroup = 9A94417D293E220500E3FFC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A94417B293E220500E3FFC5 /* ScrollingChartsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A94417A293E220500E3FFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A944187293E220600E3FFC5 /* Preview Assets.xcassets in Resources */,
+				9A944184293E220600E3FFC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A944178293E220500E3FFC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A94418E293E221700E3FFC5 /* WeightChartView1.swift in Sources */,
+				9A944196293E222600E3FFC5 /* WeightData.swift in Sources */,
+				9A944194293E222200E3FFC5 /* WeightChartView4.swift in Sources */,
+				9A94419A293E222D00E3FFC5 /* Date+Extensions.swift in Sources */,
+				9A944198293E222900E3FFC5 /* WeightViewModel.swift in Sources */,
+				9A94419C293E223100E3FFC5 /* Styles.swift in Sources */,
+				9A944182293E220500E3FFC5 /* ContentView.swift in Sources */,
+				9A944180293E220500E3FFC5 /* ScrollingChartsAppApp.swift in Sources */,
+				9A944192293E221F00E3FFC5 /* WeightChartView3.swift in Sources */,
+				9A944190293E221B00E3FFC5 /* WeightChartView2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A944188293E220600E3FFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A944189293E220600E3FFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A94418B293E220600E3FFC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollingChartsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.ScrollingChartsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A94418C293E220600E3FFC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrollingChartsApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.ScrollingChartsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A944177293E220500E3FFC5 /* Build configuration list for PBXProject "ScrollingChartsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A944188293E220600E3FFC5 /* Debug */,
+				9A944189293E220600E3FFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A94418A293E220600E3FFC5 /* Build configuration list for PBXNativeTarget "ScrollingChartsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A94418B293E220600E3FFC5 /* Debug */,
+				9A94418C293E220600E3FFC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A944174293E220500E3FFC5 /* Project object */;
+}
