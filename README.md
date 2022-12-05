@@ -26,5 +26,11 @@ Snippets of Swift code
 alt="NavigationSplitView for three-column navigation with multi-select"
 src="https://github.com/calleric/swift/blob/9915f91b5e5b8dc5abd6f86b81168f1ea75c5557/images/three-column-multi-select.png">
 
+### Adding horizontal scrolling to Swift Charts in ScrollingChartsApp
+<img width="600" 
+alt="Horizontal scrolling to Swift Bar Chart"
+src="https://github.com/calleric/swift/blob/cac652c5d8a38aaf263fbd14041b5160d022a105/images/horizontal-scroll-on-swift-charts.gif">
+
+
 
 
