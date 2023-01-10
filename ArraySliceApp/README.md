@@ -33,14 +33,9 @@ src="https://github.com/calleric/swift/blob/1770f02b5ac7456cc0574d9460ce48e80836
 
 
 
-
-
-### Adding horizontal scrolling to Swift Charts in ScrollingChartsApp
-<img width="600" 
-alt="Horizontal scrolling to Swift Bar Chart"
-src="https://github.com/calleric/swift/blob/cac652c5d8a38aaf263fbd14041b5160d022a105/images/horizontal-scroll-on-swift-charts.gif">
-
-
+<BR>
+<BR>
+<BR>
 
 
 Full article is <a href="https://swdevnotes.com/swift/2023/arrayslice-with-range-operator-and-prefix-in-swift/" target="_blank">
