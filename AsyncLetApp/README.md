@@ -11,21 +11,23 @@ multiple background tasks in parallel and wait for their combined results.
 ### Synchronous tasks block the UI
 <img width="400" 
 alt="synchronous download of file"
-src="https://github.com/calleric/swift/blob/1770f02b5ac7456cc0574d9460ce48e80836f1de/ArraySliceApp/images/synchronous-download-simulation.png">
+src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/synchronous-download-simulation.png">
 
 <BR>
 
 ### Asynchronous tasks using async let downloads multiple files in paralle
 <img width="400" 
 alt="Asynchronous tasks using async let downloads multiple files in parallel.png"
-src="https://github.com/calleric/swift/blob/1770f02b5ac7456cc0574d9460ce48e80836f1de/ArraySliceApp/images/Asynchronous-download-in-parallel.png">
+src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/Asynchronous-download-in-parallel.png">
 
 <BR>
 
-### Asynchronous tasks using async let downloads multiple files in paralle
+### Simulate downloading multiple files in parallel
 <img width="300" 
-alt="Asynchronous tasks using async let downloads multiple files in paralle"
-src="https://github.com/calleric/swift/blob/1770f02b5ac7456cc0574d9460ce48e80836f1de/ArraySliceApp/images/Asynchronous-download-in-multiple-files-in-parallel.gif">
+alt="Asynchronous tasks using async let downloads multiple files in parallel"
+src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/Asynchronous-download-in-multiple-files-in-parallel.gif">
+
+
 
 
 
