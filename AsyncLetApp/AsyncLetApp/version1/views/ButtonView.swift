@@ -32,7 +32,7 @@ struct BlueButtonStyle: ButtonStyle {
         configuration.label
             .foregroundColor(.white)
             .padding(5)
-            .frame(width:200, height: 40)
+            .frame(width:180, height: 40)
             .background(isEnabled ? Color(hue: 0.65, saturation: 0.8, brightness: 0.5) : Color.gray)
             .cornerRadius(10)
             .padding(10)
