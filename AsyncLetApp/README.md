@@ -24,12 +24,8 @@ src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/Asynchronous
 
 ### Simulate downloading multiple files in parallel
 <img width="300" 
-alt="Asynchronous tasks using async let downloads multiple files in parallel"
+alt="Simulate downloading multiple files in parallel"
 src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/Asynchronous-download-in-multiple-files-in-parallel.gif">
-
-
-
-
 
 
 
@@ -41,3 +37,40 @@ src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/Asynchronous
 Full article is <a href="https://swdevnotes.com/swift/2023/use-async-let-to-run-background-tasks-in-parallel-in-swift/" target="_blank">
 Use async let to run background tasks in parallel in Swift
 </a>
+
+
+<BR>
+<BR>
+
+<HR>
+
+<BR>
+<BR>
+
+### Cancelling a parent taks will cascade to cancel all child tasks
+<img width="400" 
+alt="Cancelling a parent taks will cascade to cancel all child tasks"
+src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-task-cascade.png">
+
+<BR>
+
+### Simulate downloading  and cancelling multiple files in parallel
+<img width="300" 
+alt="Simulate downloading  and cancelling multiple files in parallel"
+src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-resume-multiple-tasks.gif">
+
+
+
+<BR>
+<BR>
+<BR>
+
+
+Full article is <a href="https://swdevnotes.com/swift/2023/how-to-cancel-a-background-task-in-swift/" target="_blank">
+How to cancel a background task in Swift
+</a>
+
+
+<BR>
+<BR>
+<BR>
