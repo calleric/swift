@@ -55,7 +55,7 @@ src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-task-
 <BR>
 
 ### Simulate downloading  and cancelling multiple files in parallel
-<img width="300" 
+<img width="600" 
 alt="Simulate downloading  and cancelling multiple files in parallel"
 src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-resume-multiple-tasks.gif">
 
