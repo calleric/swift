@@ -25,6 +25,8 @@ struct DataFile : Identifiable, Equatable {
     mutating func increment() {
         if downloadedSize < fileSize {
             downloadedSize += 1
+        } else {
+            isDownloading = false
         }
     }
 }
