@@ -48,14 +48,14 @@ Use async let to run background tasks in parallel in Swift
 <BR>
 
 ### Cancelling a parent taks will cascade to cancel all child tasks
-<img width="400" 
+<img width="800" 
 alt="Cancelling a parent taks will cascade to cancel all child tasks"
 src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-task-cascade.png">
 
 <BR>
 
 ### Simulate downloading  and cancelling multiple files in parallel
-<img width="600" 
+<img width="300" 
 alt="Simulate downloading  and cancelling multiple files in parallel"
 src="https://github.com/calleric/swift/blob/main/AsyncLetApp/images/cancel-resume-multiple-tasks.gif">
 
