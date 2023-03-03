@@ -25,13 +25,25 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
-                CircularSliderView_XX(value: $progress1)
-                    .frame(width:250, height: 250)
+                CircularSliderView_XX(value: $progress1) {
+                    Text("\(progress1, specifier: "%.2f")")
+                        .font(.system(size: 80, weight: .bold, design:.rounded))
+                }
+                .frame(width:250, height: 250)
+                .padding()
                 
                 HStack {
-                    CircularSliderView_XX(value: $progress2, in: 32...50)
+                    CircularSliderView_XX(value: $progress2, in: 32...50) {
+                        Text("\(progress2, specifier: "%.2f")")
+                            .font(.system(size: 40, weight: .bold, design:.rounded))
+                    }
+                    .padding()
 
-                    CircularSliderView_XX(value: $progress3, in: 0...100)
+                    CircularSliderView_XX(value: $progress3, in: 0...100) {
+                        Text("\(progress3, specifier: "%.2f")")
+                            .font(.system(size: 40, weight: .bold, design:.rounded))
+                    }
+                    .padding()
                 }
                 
                 Spacer()
@@ -47,14 +59,15 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct CircularSliderView: View {
+struct CircularSliderView<Content>: View where Content: View {
     @Binding var progress: Double
 
     @State private var rotationAngle = Angle(degrees: 0)
     private var minValue = 0.0
     private var maxValue = 1.0
+    private let label: () -> Content
     
-    init(value progress: Binding<Double>, in bounds: ClosedRange<Int> = 0...1) {
+    init(value progress: Binding<Double>, in bounds: ClosedRange<Int> = 0...1, @ViewBuilder label: @escaping () -> Content) {
         self._progress = progress
         
         self.minValue = Double(bounds.first ?? 0)
@@ -92,8 +105,7 @@ struct CircularSliderView: View {
                         .stroke(Color(hue: 0.0, saturation: 0.0, brightness: 0.9),
                                 style: StrokeStyle(lineWidth: sliderWidth))
                         .overlay() {
-                            Text("\(progress, specifier: "%.2f")")
-                                .font(.system(size: radius * 0.6, weight: .bold, design:.rounded))
+                            label()
                         }
                     // uncomment to show tick marks
                     //Circle()
@@ -120,8 +132,9 @@ struct CircularSliderView: View {
                                 }
                         )
                 }
+                .position(x: gr.frame(in: .local).midX,
+                          y: gr.frame(in: .local).midY)
                 .frame(width: radius * 2.0, height: radius * 2.0, alignment: .center)
-                .padding(radius * 0.1)
             }
             
             .onAppear {
