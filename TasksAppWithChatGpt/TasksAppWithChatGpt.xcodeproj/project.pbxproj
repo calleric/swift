@@ -13,7 +13,18 @@
 		9A13B5D729C4EC7900C98507 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A13B5D629C4EC7900C98507 /* Preview Assets.xcassets */; };
 		9A13B5DE29C4EDBE00C98507 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13B5DD29C4EDBE00C98507 /* Task.swift */; };
 		9A13B5E029C4EDE900C98507 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13B5DF29C4EDE900C98507 /* TaskViewModel.swift */; };
+		9A13B5E829C4F43000C98507 /* TasksAppWithChatGptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A13B5E729C4F43000C98507 /* TasksAppWithChatGptTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A13B5E929C4F43000C98507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A13B5C429C4EC7800C98507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A13B5CB29C4EC7800C98507;
+			remoteInfo = TasksAppWithChatGpt;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9A13B5CC29C4EC7800C98507 /* TasksAppWithChatGpt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasksAppWithChatGpt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,10 +34,19 @@
 		9A13B5D629C4EC7900C98507 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9A13B5DD29C4EDBE00C98507 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		9A13B5DF29C4EDE900C98507 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		9A13B5E529C4F43000C98507 /* TasksAppWithChatGptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasksAppWithChatGptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A13B5E729C4F43000C98507 /* TasksAppWithChatGptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksAppWithChatGptTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A13B5C929C4EC7800C98507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A13B5E229C4F43000C98507 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				9A13B5CE29C4EC7800C98507 /* TasksAppWithChatGpt */,
+				9A13B5E629C4F43000C98507 /* TasksAppWithChatGptTests */,
 				9A13B5CD29C4EC7800C98507 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9A13B5CC29C4EC7800C98507 /* TasksAppWithChatGpt.app */,
+				9A13B5E529C4F43000C98507 /* TasksAppWithChatGptTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +95,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9A13B5E629C4F43000C98507 /* TasksAppWithChatGptTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A13B5E729C4F43000C98507 /* TasksAppWithChatGptTests.swift */,
+			);
+			path = TasksAppWithChatGptTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +123,24 @@
 			productReference = 9A13B5CC29C4EC7800C98507 /* TasksAppWithChatGpt.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9A13B5E429C4F43000C98507 /* TasksAppWithChatGptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A13B5ED29C4F43100C98507 /* Build configuration list for PBXNativeTarget "TasksAppWithChatGptTests" */;
+			buildPhases = (
+				9A13B5E129C4F43000C98507 /* Sources */,
+				9A13B5E229C4F43000C98507 /* Frameworks */,
+				9A13B5E329C4F43000C98507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A13B5EA29C4F43000C98507 /* PBXTargetDependency */,
+			);
+			name = TasksAppWithChatGptTests;
+			productName = TasksAppWithChatGptTests;
+			productReference = 9A13B5E529C4F43000C98507 /* TasksAppWithChatGptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +153,10 @@
 				TargetAttributes = {
 					9A13B5CB29C4EC7800C98507 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					9A13B5E429C4F43000C98507 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9A13B5CB29C4EC7800C98507;
 					};
 				};
 			};
@@ -122,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				9A13B5CB29C4EC7800C98507 /* TasksAppWithChatGpt */,
+				9A13B5E429C4F43000C98507 /* TasksAppWithChatGptTests */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +186,13 @@
 			files = (
 				9A13B5D729C4EC7900C98507 /* Preview Assets.xcassets in Resources */,
 				9A13B5D429C4EC7900C98507 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A13B5E329C4F43000C98507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A13B5E129C4F43000C98507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A13B5E829C4F43000C98507 /* TasksAppWithChatGptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A13B5EA29C4F43000C98507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A13B5CB29C4EC7800C98507 /* TasksAppWithChatGpt */;
+			targetProxy = 9A13B5E929C4F43000C98507 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A13B5D829C4EC7900C98507 /* Debug */ = {
@@ -325,6 +401,50 @@
 			};
 			name = Release;
 		};
+		9A13B5EB29C4F43100C98507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.TasksAppWithChatGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TasksAppWithChatGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TasksAppWithChatGpt";
+			};
+			name = Debug;
+		};
+		9A13B5EC29C4F43100C98507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.TasksAppWithChatGptTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TasksAppWithChatGpt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TasksAppWithChatGpt";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -342,6 +462,15 @@
 			buildConfigurations = (
 				9A13B5DB29C4EC7900C98507 /* Debug */,
 				9A13B5DC29C4EC7900C98507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A13B5ED29C4F43100C98507 /* Build configuration list for PBXNativeTarget "TasksAppWithChatGptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A13B5EB29C4F43100C98507 /* Debug */,
+				9A13B5EC29C4F43100C98507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
