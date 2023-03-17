@@ -18,38 +18,79 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(viewModel.tasks) { task in
-                VStack(alignment: .leading) {
-                    Text(task.title)
-                    if let dueDate = task.dueDate {
-                        Text("Due date: \(dueDate, formatter: Self.taskDateFormat)")
-                            .font(.caption)
+            List {
+                ForEach(viewModel.tasks) { task in
+                    if viewModel.isEditing {
+                        EditableTaskView(task: $viewModel.tasks[viewModel.tasks.firstIndex(of: task)!])
+                    } else {
+                        TaskView(task: task)
                     }
-                    Text("Status:")
-                    Picker("Task Status", selection: $viewModel.tasks[viewModel.tasks.firstIndex(of: task)!].status) {
-                        ForEach(TaskStatus.allCases, id: \.self) { status in
-                            Text(status.rawValue).tag(status)
-                        }
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
                 }
-                .foregroundColor(task.completed ? .gray : .primary)
-                .opacity(task.completed ? 0.5 : 1)
-                .onTapGesture {
-                    if let index = self.viewModel.tasks.firstIndex(where: { $0.id == task.id }) {
-                        self.viewModel.tasks[index].completed.toggle()
-                    }
+                .onDelete { indexSet in
+                    self.viewModel.tasks.remove(atOffsets: indexSet)
                 }
             }
             .navigationTitle("Tasks")
-            .navigationBarItems(trailing: Button(action: {
-                self.viewModel.tasks.append(Task(title: "New Task", dueDate: Date(), status: .notStarted))
-            }) {
-                Image(systemName: "plus")
-            })
+            .navigationBarItems(
+                trailing: HStack {
+                    if viewModel.isEditing {
+                        Button("Done") {
+                            self.viewModel.isEditing.toggle()
+                        }
+                    } else {
+                        Button(action: {
+                            self.viewModel.tasks.append(Task(title: "New Task", dueDate: Date(), status: .notStarted))
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                        Button("Edit") {
+                            self.viewModel.isEditing.toggle()
+                        }
+                    }
+                }
+            )
         }
     }
 }
+
+struct TaskView: View {
+    let task: Task
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(task.title)
+            if let dueDate = task.dueDate {
+                Text("Due date: \(dueDate, formatter: ContentView.taskDateFormat)")
+                    .font(.caption)
+            }
+            Text("Status: \(task.status.rawValue)")
+        }
+        .foregroundColor(task.completed ? .gray : .primary)
+        .opacity(task.completed ? 0.5 : 1)
+    }
+}
+
+struct EditableTaskView: View {
+    @Binding var task: Task
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            TextField("Title", text: $task.title)
+            if let dueDate = task.dueDate {
+                DatePicker("Due date", selection: $task.dueDate, displayedComponents: .date)
+            }
+            Picker("Task Status", selection: $task.status) {
+                ForEach(TaskStatus.allCases, id: \.self) { status in
+                    Text(status.rawValue).tag(status)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+        }
+        .foregroundColor(task.completed ? .gray : .primary)
+        .opacity(task.completed ? 0.5 : 1)
+    }
+}
+
 
 
 struct ContentView_Previews: PreviewProvider {

@@ -13,4 +13,6 @@ class TaskViewModel: ObservableObject {
         Task(title: "Task 2", dueDate: Date().addingTimeInterval(86400), status: .notStarted),
         Task(title: "Task 3", dueDate: nil, status: .complete)
     ]
+    @Published var isEditing = false // add isEditing property
 }
+
