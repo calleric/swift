@@ -72,12 +72,21 @@ struct TaskView: View {
 
 struct EditableTaskView: View {
     @Binding var task: Task
+    @State private var dueDate: Date? // Add new property
+
+    init(task: Binding<Task>) {
+        _task = task
+        _dueDate = State(initialValue: task.wrappedValue.dueDate) // Assign initial value to dueDate
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
             TextField("Title", text: $task.title)
-            if let dueDate = task.dueDate {
-                DatePicker("Due date", selection: $task.dueDate, displayedComponents: .date)
+            if let dueDate = dueDate {
+                DatePicker("Due date", selection: Binding<Date>(
+                    get: { dueDate },
+                    set: { newValue in self.dueDate = newValue }
+                ), displayedComponents: .date)
             }
             Picker("Task Status", selection: $task.status) {
                 ForEach(TaskStatus.allCases, id: \.self) { status in
