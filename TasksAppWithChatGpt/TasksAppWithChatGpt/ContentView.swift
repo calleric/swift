@@ -25,10 +25,13 @@ struct ContentView: View {
                         Text("Due date: \(dueDate, formatter: Self.taskDateFormat)")
                             .font(.caption)
                     }
-                    if let status = task.status {
-                        Text("Status: \(status)")
-                            .font(.caption)
+                    Text("Status:")
+                    Picker("Task Status", selection: $viewModel.tasks[viewModel.tasks.firstIndex(of: task)!].status) {
+                        ForEach(TaskStatus.allCases, id: \.self) { status in
+                            Text(status.rawValue).tag(status)
+                        }
                     }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
                 .foregroundColor(task.completed ? .gray : .primary)
                 .opacity(task.completed ? 0.5 : 1)
@@ -40,7 +43,7 @@ struct ContentView: View {
             }
             .navigationTitle("Tasks")
             .navigationBarItems(trailing: Button(action: {
-                self.viewModel.tasks.append(Task(title: "New Task", dueDate: Date(), status: "Not started"))
+                self.viewModel.tasks.append(Task(title: "New Task", dueDate: Date(), status: .notStarted))
             }) {
                 Image(systemName: "plus")
             })
