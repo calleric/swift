@@ -13,12 +13,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(viewModel.tasks) { task in
-                Text(task.title)
+                Button(action: {
+                    if let index = self.viewModel.tasks.firstIndex(where: { $0.id == task.id }) {
+                        self.viewModel.tasks[index].completed.toggle()
+                    }
+                }) {
+                    HStack {
+                        Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
+                        Text(task.title)
+                    }
+                }
             }
             .navigationTitle("Tasks")
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
