@@ -25,6 +25,11 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Tasks")
+            .navigationBarItems(trailing: Button(action: {
+                self.viewModel.tasks.append(Task(title: "New Task"))
+            }) {
+                Image(systemName: "plus")
+            })
         }
     }
 }
