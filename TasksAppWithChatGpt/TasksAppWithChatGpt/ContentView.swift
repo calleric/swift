@@ -8,49 +8,102 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = TaskViewModel()
     
-    @ObservedObject var taskListViewModel: TaskListViewModel
-    @State private var newTaskTitle = ""
-    @State private var newTaskDueDate = Date()
+    static let taskDateFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        return formatter
+    }()
     
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    TextField("Enter new task title", text: $newTaskTitle)
-                    DatePicker("Due date", selection: $newTaskDueDate, displayedComponents: .date)
-                    Button("Add") {
-                        let newTask = Task(title: newTaskTitle, dueDate: newTaskDueDate, status: .notStarted)
-                        let newTaskViewModel = TaskViewModel(task: newTask)
-                        taskListViewModel.addTask(taskViewModel: newTaskViewModel)
-                        newTaskTitle = ""
-                        newTaskDueDate = Date()
+            List {
+                ForEach(viewModel.tasks) { task in
+                    if viewModel.isEditing {
+                        EditableTaskView(task: $viewModel.tasks[viewModel.tasks.firstIndex(of: task)!])
+                    } else {
+                        TaskView(task: task)
                     }
-                }.padding()
-                List {
-                    ForEach($taskListViewModel.taskViewModels) { $taskViewModel in
-                        NavigationLink(destination: ContentView(taskListViewModel: taskListViewModel)) {
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text(taskViewModel.title)
-                                    if let dueDate = taskViewModel.dueDate {
-                                        Text("Due: \(dueDate, formatter: taskListViewModel.dueDateFormatter)")
-                                    }
-                                }
-                                Spacer()
-                                Image(systemName: taskViewModel.status.iconName)
-                            }
-                        }
-                    }.onDelete(perform: taskListViewModel.removeTask)
                 }
-            }.navigationTitle("Tasks")
+                .onDelete { indexSet in
+                    self.viewModel.tasks.remove(atOffsets: indexSet)
+                }
+            }
+            .navigationTitle("Tasks")
+            .navigationBarItems(
+                trailing: HStack {
+                    if viewModel.isEditing {
+                        Button("Done") {
+                            self.viewModel.isEditing.toggle()
+                        }
+                    } else {
+                        Button(action: {
+                            self.viewModel.tasks.append(Task(title: "New Task", dueDate: Date(), status: .notStarted))
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                        Button("Edit") {
+                            self.viewModel.isEditing.toggle()
+                        }
+                    }
+                }
+            )
         }
     }
 }
 
+struct TaskView: View {
+    let task: Task
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(task.title)
+            if let dueDate = task.dueDate {
+                Text("Due date: \(dueDate, formatter: ContentView.taskDateFormat)")
+                    .font(.caption)
+            }
+            Text("Status: \(task.status.rawValue)")
+        }
+        .foregroundColor(task.completed ? .gray : .primary)
+        .opacity(task.completed ? 0.5 : 1)
+    }
+}
+
+struct EditableTaskView: View {
+    @Binding var task: Task
+    @State private var dueDate: Date? // Add new property
+
+    init(task: Binding<Task>) {
+        _task = task
+        _dueDate = State(initialValue: task.wrappedValue.dueDate) // Assign initial value to dueDate
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            TextField("Title", text: $task.title)
+            if let dueDate = dueDate {
+                DatePicker("Due date", selection: Binding<Date>(
+                    get: { dueDate },
+                    set: { newValue in self.dueDate = newValue }
+                ), displayedComponents: .date)
+            }
+            Picker("Task Status", selection: $task.status) {
+                ForEach(TaskStatus.allCases, id: \.self) { status in
+                    Text(status.rawValue).tag(status)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+        }
+        .foregroundColor(task.completed ? .gray : .primary)
+        .opacity(task.completed ? 0.5 : 1)
+    }
+}
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(taskListViewModel: TaskListViewModel())
+        ContentView()
     }
 }
