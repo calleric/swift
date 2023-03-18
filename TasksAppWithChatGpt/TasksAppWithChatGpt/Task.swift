@@ -7,11 +7,23 @@
 
 import SwiftUI
 
-enum TaskStatus: String, CaseIterable {
-    case notStarted = "Not started"
-    case inProgress = "In progress"
-    case complete = "Complete"
+enum TaskStatus: String, CaseIterable, Codable {
+    case notStarted
+    case inProgress
+    case complete
+    
+    var iconName: String {
+        switch self {
+        case .notStarted:
+            return "circle"
+        case .inProgress:
+            return "circle.fill"
+        case .complete:
+            return "checkmark.circle.fill"
+        }
+    }
 }
+
 
 struct Task: Identifiable, Equatable {
     var id = UUID()
