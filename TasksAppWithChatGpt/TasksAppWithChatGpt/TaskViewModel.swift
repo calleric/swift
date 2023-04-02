@@ -8,15 +8,21 @@
 import Foundation
 
 class TaskViewModel: ObservableObject {
+    private let userDefaults = UserDefaults.standard
     @Published var tasks: [Task]
     @Published var isEditing = false // add isEditing property
     
     init() {
-        tasks = [
-            Task(title: "Task 1", dueDate: Date(), status: .inProgress),
-            Task(title: "Task 2", dueDate: Date().addingTimeInterval(86400), status: .notStarted),
-            Task(title: "Task 3", dueDate: nil, status: .complete)
-        ]
+        if let savedTasksData = userDefaults.data(forKey: "tasks"),
+           let savedTasks = try? JSONDecoder().decode([Task].self, from: savedTasksData) {
+            self.tasks = savedTasks
+        }
+    }
+    
+    func saveTasks() {
+        if let encodedTasks = try? JSONEncoder().encode(tasks) {
+            userDefaults.set(encodedTasks, forKey: "tasks")
+        }
     }
 }
 
