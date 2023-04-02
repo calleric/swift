@@ -9,20 +9,14 @@ import SwiftUI
 
 struct EditableTaskView: View {
     @Binding var task: Task
-    @State private var dueDate: Date? // Add new property
-
-    init(task: Binding<Task>) {
-        _task = task
-        _dueDate = State(initialValue: task.wrappedValue.dueDate) // Assign initial value to dueDate
-    }
     
     var body: some View {
         VStack(alignment: .leading) {
             TextField("Title", text: $task.title)
-            if let dueDate = dueDate {
+            if let dueDate = task.dueDate {
                 DatePicker("Due date", selection: Binding<Date>(
                     get: { dueDate },
-                    set: { newValue in self.dueDate = newValue }
+                    set: { newValue in self.task.dueDate = newValue } // use the binding directly
                 ), displayedComponents: .date)
             }
             Picker("Task Status", selection: $task.status) {

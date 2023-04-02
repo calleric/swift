@@ -19,11 +19,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.tasks) { task in
+                ForEach($viewModel.tasks) { $task in // use a binding
                     if viewModel.isEditing {
-                        EditableTaskView(task: $viewModel.tasks[viewModel.tasks.firstIndex(of: task)!])
+                        EditableTaskView(task: $task)
                     } else {
-                        TaskView(task: task)
+                        TaskView(task: $task) // use a binding
                     }
                 }
                 .onDelete { indexSet in

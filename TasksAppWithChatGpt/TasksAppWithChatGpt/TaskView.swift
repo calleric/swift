@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskView: View {
-    let task: Task
+    @Binding var task: Task // change to a binding
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -26,6 +26,6 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(task: Task(title: "Preview Task"))
+        TaskView(task: .constant(Task(title: "Preview Task", completed: false, dueDate: Date())))
     }
 }
