@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var viewModel = TaskViewModel()
+    @EnvironmentObject var viewModel: TaskViewModel
     
     static let taskDateFormat: DateFormatter = {
         let formatter = DateFormatter()
