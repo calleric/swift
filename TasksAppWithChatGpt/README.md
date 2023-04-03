@@ -51,17 +51,54 @@ src="https://github.com/calleric/swift/blob/main/TasksAppWithChatGpt/images/edit
 
 
 
+## Part 2
+
+The second article builds on the app from part 1 to work with ChatGPT to resolve the
+issues and then add the ability to persist the tasks when the app is closed.
+
+
+
+### List of Task in dark and light mode
+<img width="400" 
+alt="List of Task in dark and light mode"
+src="https://github.com/calleric/swift/blob/main/TasksAppWithChatGpt/images/light-and-dark-mode.png">
+
+<BR>
+
+
+
+### Tasks added, edited and deleted
+<img width="300" 
+alt="Tasks added, edited and deleted"
+src="https://github.com/calleric/swift/blob/main/TasksAppWithChatGpt/images/tasks-persisted.gif">
+
+<BR>
+
+
+
+
 <BR>
 <BR>
 <BR>
 
 
-Full article is <a href="https://swdevnotes.com/swift/2023/can-chatgpt-create-an-ios-app-in-swiftui-part-1/" target="_blank">
+First article is <a href="https://swdevnotes.com/swift/2023/can-chatgpt-create-an-ios-app-in-swiftui-part-1/" target="_blank">
 Can ChatGPT create an iOS app in SwiftUI - part 1
 </a>
 
 
 <BR>
+
+<BR>
+
+
+Second article is <a href="https://swdevnotes.com/swift/2023/can-chatgpt-create-an-ios-app-in-swiftui-part-2/" target="_blank">
+Can ChatGPT create an iOS app in SwiftUI - part 2
+</a>
+
+
+<BR>
+
 <BR>
 
 <HR>
