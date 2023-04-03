@@ -11,14 +11,15 @@ import SwiftUI
 struct TasksAppWithChatGptApp: App {
     @Environment(\.scenePhase) private var scenePhase
     
+    let taskViewModel = TaskViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(TaskViewModel())
+                .environmentObject(taskViewModel)
         }
         .onChange(of: scenePhase) { newScenePhase in
             if newScenePhase == .inactive || newScenePhase == .background {
-                let taskViewModel = TaskViewModel()
                 taskViewModel.saveTasks()
             }
         }
