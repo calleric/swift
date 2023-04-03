@@ -8,11 +8,14 @@
 import Foundation
 
 class TaskViewModel: ObservableObject {
-    private let userDefaults = UserDefaults.standard
+    private let userDefaults: UserDefaults
     @Published var tasks: [Task]
-    @Published var isEditing = false // add isEditing property
+    @Published var isEditing = false
     
     init() {
+        self.userDefaults = UserDefaults.standard
+        self.tasks = []
+        
         if let savedTasksData = userDefaults.data(forKey: "tasks"),
            let savedTasks = try? JSONDecoder().decode([Task].self, from: savedTasksData) {
             self.tasks = savedTasks
