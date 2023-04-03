@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum TaskStatus: String, CaseIterable {
+enum TaskStatus: String, CaseIterable, Codable {
     case notStarted = "Not started"
     case inProgress = "In progress"
     case complete = "Complete"

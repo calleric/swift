@@ -26,6 +26,9 @@ struct TaskView: View {
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView(task: .constant(Task(title: "Preview Task", completed: false, dueDate: Date())))
+        TaskView(task: .constant(Task(id: UUID(),
+                                      title: "Preview Task",
+                                      dueDate: Date(),
+                                      status: .inProgress)))
     }
 }
