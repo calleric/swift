@@ -1,4 +1,4 @@
-## CircularSliderWithChatGpt4 is a test iOS app in SwiftUI generated with chatGPT
+## CircularSliderWithChatGpt4 is a SwiftUI app used to show Circular Sliders generated with chatGPT
 
 
 This app was developed to see what 
@@ -13,11 +13,11 @@ worked as expected. Some samples came very close, so I focussed on one sample
 
 <BR>
 
-Circular Slider 5a addressed the UI issue with the thumb control displaying incorrectly.
+<b>Circular Slider 5a</b> - addressed the UI issue with the thumb control displaying incorrectly.
 
 <BR>
 
-Circular Slider 5b addressed the issue of the component being fixed size.
+<b>Circular Slider 5b</b> - addressed the issue of the component being fixed size.
 
 There are still some outstanding issues regarding overall size of the Circular Slider
 and how it will extend outside of the frame in which it is placed, but this could be
@@ -31,8 +31,16 @@ All this code was generated with [ChatGPT] version 4 - so it will be interesting
 see where this goes in the next version of ChatGPT.
 
 
-
 <BR>
+
+
+Full article is <a href="https://swdevnotes.com/swift/2023/create-a-circular-slider-in-swiftui-with-chatgpt/" target="_blank">
+Create a circular slider in SwiftUI with ChatGPT
+</a>
+
+
+
+
 <BR>
 
 
@@ -48,14 +56,6 @@ src="https://github.com/calleric/swift/blob/main/CircularSliderWithChatGpt4/imag
 <img width="600" 
 alt="Navigate multiple prompts and responses from ChatGPT"
 src="https://github.com/calleric/swift/blob/main/CircularSliderWithChatGpt4/images/chatgpt-navigation-multiple-prompts.png">
-
-<BR>
-
-
-### List of Task in edit mode
-<img width="400" 
-alt="List of Tasks in edit mode"
-src="https://github.com/calleric/swift/blob/main/CircularSliderWithChatGpt4/images/edit-tasks-view.png">
 
 <BR>
 
@@ -88,23 +88,6 @@ src="https://github.com/calleric/swift/blob/main/CircularSliderWithChatGpt4/imag
 
 
 
-
-
-
-
-
-
-
-
-<BR>
-<BR>
-<BR>
-<BR>
-
-
-Full article is <a href="https://swdevnotes.com/swift/2023/create-a-circular-slider-in-swiftui-with-chatgpt/" target="_blank">
-Create a circular slider in SwiftUI with ChatGPT
-</a>
 
 
 <BR>
