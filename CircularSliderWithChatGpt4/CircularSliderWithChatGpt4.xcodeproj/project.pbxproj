@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A2F372A29EA54BF00B17103 /* CircularSliderWithChatGpt4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F372929EA54BF00B17103 /* CircularSliderWithChatGpt4App.swift */; };
+		9A2F372C29EA54BF00B17103 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F372B29EA54BF00B17103 /* ContentView.swift */; };
+		9A2F372E29EA54C000B17103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F372D29EA54C000B17103 /* Assets.xcassets */; };
+		9A2F373129EA54C000B17103 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F373029EA54C000B17103 /* Preview Assets.xcassets */; };
+		9A2F373829EA54D300B17103 /* SliderView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F373729EA54D300B17103 /* SliderView1.swift */; };
+		9A2F373A29EA54D700B17103 /* SliderView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F373929EA54D700B17103 /* SliderView2.swift */; };
+		9A2F373C29EA54DA00B17103 /* SliderView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F373B29EA54DA00B17103 /* SliderView3.swift */; };
+		9A2F373E29EA54DE00B17103 /* SliderView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F373D29EA54DE00B17103 /* SliderView4.swift */; };
+		9A2F374029EA54E200B17103 /* SliderView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F373F29EA54E200B17103 /* SliderView5.swift */; };
+		9A2F374229EA54E500B17103 /* SliderView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F374129EA54E500B17103 /* SliderView6.swift */; };
+		9A2F374429EA54E900B17103 /* SliderView7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F374329EA54E900B17103 /* SliderView7.swift */; };
+		9A2F374629EA54EC00B17103 /* SliderView8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F374529EA54EC00B17103 /* SliderView8.swift */; };
+		9A2F374829EA54F000B17103 /* SliderView10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F374729EA54F000B17103 /* SliderView10.swift */; };
+		9A2F374A29EA54F400B17103 /* ThumbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F374929EA54F400B17103 /* ThumbView.swift */; };
+		9AC3A01029EBBA91004C9534 /* SliderView9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3A00F29EBBA91004C9534 /* SliderView9.swift */; };
+		9AC3A01229EBD127004C9534 /* SliderView5a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3A01129EBD127004C9534 /* SliderView5a.swift */; };
+		9AC3A01429EBDF59004C9534 /* SliderView5b.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC3A01329EBDF59004C9534 /* SliderView5b.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A2F372629EA54BF00B17103 /* CircularSliderWithChatGpt4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularSliderWithChatGpt4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2F372929EA54BF00B17103 /* CircularSliderWithChatGpt4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderWithChatGpt4App.swift; sourceTree = "<group>"; };
+		9A2F372B29EA54BF00B17103 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A2F372D29EA54C000B17103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A2F373029EA54C000B17103 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9A2F373729EA54D300B17103 /* SliderView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView1.swift; sourceTree = "<group>"; };
+		9A2F373929EA54D700B17103 /* SliderView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView2.swift; sourceTree = "<group>"; };
+		9A2F373B29EA54DA00B17103 /* SliderView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView3.swift; sourceTree = "<group>"; };
+		9A2F373D29EA54DE00B17103 /* SliderView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView4.swift; sourceTree = "<group>"; };
+		9A2F373F29EA54E200B17103 /* SliderView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView5.swift; sourceTree = "<group>"; };
+		9A2F374129EA54E500B17103 /* SliderView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView6.swift; sourceTree = "<group>"; };
+		9A2F374329EA54E900B17103 /* SliderView7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView7.swift; sourceTree = "<group>"; };
+		9A2F374529EA54EC00B17103 /* SliderView8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView8.swift; sourceTree = "<group>"; };
+		9A2F374729EA54F000B17103 /* SliderView10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView10.swift; sourceTree = "<group>"; };
+		9A2F374929EA54F400B17103 /* ThumbView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbView.swift; sourceTree = "<group>"; };
+		9AC3A00F29EBBA91004C9534 /* SliderView9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView9.swift; sourceTree = "<group>"; };
+		9AC3A01129EBD127004C9534 /* SliderView5a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView5a.swift; sourceTree = "<group>"; };
+		9AC3A01329EBDF59004C9534 /* SliderView5b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView5b.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A2F372329EA54BF00B17103 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A2F371D29EA54BF00B17103 = {
+			isa = PBXGroup;
+			children = (
+				9A2F372829EA54BF00B17103 /* CircularSliderWithChatGpt4 */,
+				9A2F372729EA54BF00B17103 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A2F372729EA54BF00B17103 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F372629EA54BF00B17103 /* CircularSliderWithChatGpt4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A2F372829EA54BF00B17103 /* CircularSliderWithChatGpt4 */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F372929EA54BF00B17103 /* CircularSliderWithChatGpt4App.swift */,
+				9A2F372B29EA54BF00B17103 /* ContentView.swift */,
+				9A2F373729EA54D300B17103 /* SliderView1.swift */,
+				9A2F373929EA54D700B17103 /* SliderView2.swift */,
+				9A2F373B29EA54DA00B17103 /* SliderView3.swift */,
+				9A2F373D29EA54DE00B17103 /* SliderView4.swift */,
+				9A2F373F29EA54E200B17103 /* SliderView5.swift */,
+				9AC3A01129EBD127004C9534 /* SliderView5a.swift */,
+				9AC3A01329EBDF59004C9534 /* SliderView5b.swift */,
+				9A2F374129EA54E500B17103 /* SliderView6.swift */,
+				9A2F374329EA54E900B17103 /* SliderView7.swift */,
+				9A2F374529EA54EC00B17103 /* SliderView8.swift */,
+				9AC3A00F29EBBA91004C9534 /* SliderView9.swift */,
+				9A2F374729EA54F000B17103 /* SliderView10.swift */,
+				9A2F374929EA54F400B17103 /* ThumbView.swift */,
+				9A2F372D29EA54C000B17103 /* Assets.xcassets */,
+				9A2F372F29EA54C000B17103 /* Preview Content */,
+			);
+			path = CircularSliderWithChatGpt4;
+			sourceTree = "<group>";
+		};
+		9A2F372F29EA54C000B17103 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F373029EA54C000B17103 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A2F372529EA54BF00B17103 /* CircularSliderWithChatGpt4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A2F373429EA54C000B17103 /* Build configuration list for PBXNativeTarget "CircularSliderWithChatGpt4" */;
+			buildPhases = (
+				9A2F372229EA54BF00B17103 /* Sources */,
+				9A2F372329EA54BF00B17103 /* Frameworks */,
+				9A2F372429EA54BF00B17103 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircularSliderWithChatGpt4;
+			productName = CircularSliderWithChatGpt4;
+			productReference = 9A2F372629EA54BF00B17103 /* CircularSliderWithChatGpt4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A2F371E29EA54BF00B17103 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9A2F372529EA54BF00B17103 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 9A2F372129EA54BF00B17103 /* Build configuration list for PBXProject "CircularSliderWithChatGpt4" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A2F371D29EA54BF00B17103;
+			productRefGroup = 9A2F372729EA54BF00B17103 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A2F372529EA54BF00B17103 /* CircularSliderWithChatGpt4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A2F372429EA54BF00B17103 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2F373129EA54C000B17103 /* Preview Assets.xcassets in Resources */,
+				9A2F372E29EA54C000B17103 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A2F372229EA54BF00B17103 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2F373829EA54D300B17103 /* SliderView1.swift in Sources */,
+				9A2F374A29EA54F400B17103 /* ThumbView.swift in Sources */,
+				9A2F374029EA54E200B17103 /* SliderView5.swift in Sources */,
+				9A2F373E29EA54DE00B17103 /* SliderView4.swift in Sources */,
+				9A2F374429EA54E900B17103 /* SliderView7.swift in Sources */,
+				9A2F374229EA54E500B17103 /* SliderView6.swift in Sources */,
+				9A2F374629EA54EC00B17103 /* SliderView8.swift in Sources */,
+				9AC3A01029EBBA91004C9534 /* SliderView9.swift in Sources */,
+				9A2F372C29EA54BF00B17103 /* ContentView.swift in Sources */,
+				9A2F372A29EA54BF00B17103 /* CircularSliderWithChatGpt4App.swift in Sources */,
+				9AC3A01429EBDF59004C9534 /* SliderView5b.swift in Sources */,
+				9A2F373C29EA54DA00B17103 /* SliderView3.swift in Sources */,
+				9A2F374829EA54F000B17103 /* SliderView10.swift in Sources */,
+				9A2F373A29EA54D700B17103 /* SliderView2.swift in Sources */,
+				9AC3A01229EBD127004C9534 /* SliderView5a.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A2F373229EA54C000B17103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A2F373329EA54C000B17103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A2F373529EA54C000B17103 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CircularSliderWithChatGpt4/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.CircularSliderWithChatGpt4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A2F373629EA54C000B17103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CircularSliderWithChatGpt4/Preview Content\"";
+				DEVELOPMENT_TEAM = 7FSGPFARH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swdevnotes.CircularSliderWithChatGpt4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A2F372129EA54BF00B17103 /* Build configuration list for PBXProject "CircularSliderWithChatGpt4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2F373229EA54C000B17103 /* Debug */,
+				9A2F373329EA54C000B17103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A2F373429EA54C000B17103 /* Build configuration list for PBXNativeTarget "CircularSliderWithChatGpt4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A2F373529EA54C000B17103 /* Debug */,
+				9A2F373629EA54C000B17103 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A2F371E29EA54BF00B17103 /* Project object */;
+}
