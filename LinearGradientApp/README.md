@@ -28,7 +28,7 @@ LinearGradient in SwiftUI
 ### linear-gradient
 <img width="400" 
 alt="Linear Gradient"
-src="https://github.com/calleric/swift/blob/main/LinearGradient/images/linear-gradient.png">
+src="https://github.com/calleric/swift/blob/main/LinearGradientApp/images/linear-gradient.png">
 
 <BR>
 
@@ -40,7 +40,7 @@ src="https://github.com/calleric/swift/blob/main/LinearGradient/images/linear-gr
 ### color-pencil-set
 <img width="400" 
 alt="Color pencil set with color gradient on the tip"
-src="https://github.com/calleric/swift/blob/main/LinearGradient/images/color-pencil-set.png">
+src="https://github.com/calleric/swift/blob/main/LinearGradientApp/images/color-pencil-set.png">
 
 <BR>
 
@@ -52,7 +52,7 @@ src="https://github.com/calleric/swift/blob/main/LinearGradient/images/color-pen
 ### all-linear-gradient-options
 <img width="600" 
 alt="Grid of all combinations of standard linear gradients"
-src="https://github.com/calleric/swift/blob/main/LinearGradient/images/all-linear-gradient-options.png">
+src="https://github.com/calleric/swift/blob/main/LinearGradientApp/images/all-linear-gradient-options.png">
 
 <BR>
 
