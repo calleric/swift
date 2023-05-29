@@ -17,6 +17,8 @@ struct ContentView: View {
                 NavigationLink (destination: ThreeColumnDepartmentView(), label: {Text("04 ThreeColumnDepartmentView")})
                 NavigationLink (destination: ThreeColumnSingleView(), label: {Text("05 ThreeColumnSingleView")})
             }
+            .navigationTitle("Title")
+            .foregroundColor(.red)
         }
     }
 }
