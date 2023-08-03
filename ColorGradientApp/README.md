@@ -24,7 +24,7 @@ Animate background with color gradient in SwiftUI
 ### Use white color with opacity to tone down background animation
 <img width="400" 
 alt="color over angular gradient animation"
-src="https://github.com/calleric/swift/blob/main/AngularGradientApp/images/color-over-angular-gradient.png">
+src="https://github.com/calleric/swift/blob/main/colorgradientapp/images/color-over-angular-gradient.png">
 
 <BR>
 
