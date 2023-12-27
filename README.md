@@ -32,5 +32,12 @@ alt="Horizontal scrolling to Swift Bar Chart"
 src="https://github.com/calleric/swift/blob/cac652c5d8a38aaf263fbd14041b5160d022a105/images/horizontal-scroll-on-swift-charts.gif">
 
 
+<BR>
+
+### Animation of Conway's Game of Life
+<img width="400" 
+alt="Animation of Conway's Game of Life"
+src="https://github.com/calleric/swift/blob/main/GameOfLifeApp/images/conways-game-of-life.gif">
+
 
 
